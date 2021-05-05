@@ -1,14 +1,11 @@
 import React from 'react';
+import logo from '../../GitHub-Mark-Light-64px.png';
 import './Header.css';
-import '../Link/Link';
 
-const Header = ({ logo }) => (
+const Header = () => (
   <header className='App-header'>
     <img src={logo} className='App-logo' alt='logo' />
-    <p>
-      Edit <code>src/App.js</code> and save to reload.
-    </p>
-    <Link url='https://reactjs.org' title='Learn React' />
+    <h1>My GitHub Portfolio</h1>
   </header>
 );
 
