@@ -1,14 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from '../components/Header/Header';
 import Profile from './Profile';
-import './App.css';
+
+const AppWrapper = styled.div`
+  text-align: center;
+`;
 
 function App() {
   return (
-    <div className='App'>
+    <AppWrapper>
       <Header />
       <Profile />
-    </div>
+    </AppWrapper>
   );
 }
 
