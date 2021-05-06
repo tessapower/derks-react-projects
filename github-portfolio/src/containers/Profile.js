@@ -19,12 +19,14 @@ class Profile extends Component {
       data: {},
       repositories: [],
       loading: true,
+      error: '',
     }
   }
   
   async componentDidMount() {
-    const profile = await fetch('https://api.githib.com/users/tessapower');
-    const profileJSON = await profile.json();
+    try {
+      const profile = await fetch('tessapower');
+      const profileJSON = await profile.json();
 
       if (profileJSON) {
         const repositories = await fetch(profileJSON.repos_url);
