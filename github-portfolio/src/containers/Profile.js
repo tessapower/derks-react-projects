@@ -37,17 +37,17 @@ class Profile extends Component {
       }
     } catch(error) {
       this.setState({
-        data: profileJSON,
         loading: false,
-      })
+        error: error.message,
+      });
     }
   }
 
   render() {
-    const { data, loading } = this.state;
+    const { data, loading, repositories, error } = this.state;
 
-    if (loading) {
-      return <div>Loading...</div>
+    if (loading || error) {
+      return <div>{loading ? 'Loading...' : error}</div>;
     }
     
     const items = [
