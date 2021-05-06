@@ -23,12 +23,11 @@ class App extends Component {
   render() {
     return (
       <>
-        <GlobalStyle>
+        <GlobalStyle />
           <AppWrapper>
             <Header />
             <Profile />
           </AppWrapper>
-        </GlobalStyle>
       </>
     );
   }
