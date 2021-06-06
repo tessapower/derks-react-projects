@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from '../components/Header/Header';
